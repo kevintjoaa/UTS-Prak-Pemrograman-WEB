@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    background-image: url(./images/background-about-us.jpg); /* Ganti 'background.jpg' dengan path gambar Anda */
+    background-size: cover; /* Agar gambar memenuhi seluruh area */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-attachment: fixed; /* Efek paralaks (opsional) */
+    color: #fff; /* Warna teks global */
+    margin: 0; /* Menghapus margin default browser */
+    padding: 0; /* Menghapus padding default browser */
+    font-family: Arial, sans-serif; /* Font default */
+}
+
+/* Header */
+.header {   
+    background-image: url(./images/background\ header.jpg); /* Ganti dengan path gambar */
+    background-size: cover; /* Membuat gambar memenuhi seluruh area */
+    background-position: center; /* Menempatkan gambar di tengah */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.header h1 {
+    font-family: gotham
+    font-optical-sizing: auto;
+    font-weight: <300>;
+    font-style: normal;
+    font-size: 3rem;
+    margin: 0;
+}
+.header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 10); /* Warna hitam dengan transparansi 70% */
+    position: sticky; /* Menjadikan navbar tetap di atas saat scrolling */
+    top: 0; /* Menempel di atas halaman */
+    z-index: 10; /* Pastikan navbar berada di atas elemen lain */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan untuk efek elegan */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff; /* Warna teks putih */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #555; /* Warna latar hover */
+    border-radius: 5px; /* Membuat tepi tombol melengkung */
+}
+
+/* Dropdown Menu */
+.dropdown .dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Sembunyikan submenu awalnya */
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan submenu saat hover */
+}
+
+/* Sections */
+.section {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparansi layer untuk mempermudah membaca teks */
+    padding: 50px 20px;
+    border-radius: 10px; /* Membuat sudut elemen melengkung */
+    margin: 20px auto;
+    max-width: 1200px; /* Membatasi lebar konten */
+    text-align: center;
+}
+.section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section p, .section ul {
+    text-align: center;
+}
+
+/* Container for Content */
+.about-section .container {
+    background-color: rgba(0, 0, 0, 0.6); /* Layer hitam transparan untuk meningkatkan keterbacaan teks */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Team Roster */
+.roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+.player-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+}
+.player-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.player-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+/* Schedule */
+.schedule-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-image: url(./images/background\ header.jpg); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 3px solid rgba(255, 255, 255, 0.2); /* Garis putih transparan */
+}
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
